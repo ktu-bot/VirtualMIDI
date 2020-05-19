@@ -13,16 +13,24 @@ import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
 
+    int instrument = 0;
+
     @FXML
-    Button c4;
+
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        Play play = new Play();
+        play.setup();
     }
 
     public void setInstrument(int i) {
-        Play.instrument = i;
+        instrument = i;
+    }
+
+    public void play() {
+        Play.play(instrument, 60);
     }
 }
 

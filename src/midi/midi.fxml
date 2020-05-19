@@ -7,8 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="753.0" prefWidth="1208.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="753.0" prefWidth="1208.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="midi.Controller">
    <children>
       <HBox layoutX="19.0" layoutY="377.0" prefHeight="373.0" prefWidth="1109.0">
          <children>
@@ -19,7 +18,7 @@
             <Button minWidth="78.0" mnemonicParsing="false" prefHeight="476.0" prefWidth="78.0" />
             <Button minWidth="78.0" mnemonicParsing="false" prefHeight="583.0" prefWidth="78.0" />
             <Button minWidth="78.0" mnemonicParsing="false" prefHeight="494.0" prefWidth="78.0" />
-            <Button fx:id="c4" minWidth="78.0" mnemonicParsing="false" prefHeight="611.0" prefWidth="78.0" text="C" />
+            <Button fx:id="c4" minWidth="78.0" mnemonicParsing="false" onAction="#play" prefHeight="611.0" prefWidth="78.0" text="C" />
             <Button minWidth="78.0" mnemonicParsing="false" prefHeight="542.0" prefWidth="78.0" />
             <Button minWidth="78.0" mnemonicParsing="false" prefHeight="607.0" prefWidth="78.0" />
             <Button minWidth="78.0" mnemonicParsing="false" prefHeight="663.0" prefWidth="78.0" />

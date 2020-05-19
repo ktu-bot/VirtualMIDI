@@ -12,7 +12,6 @@ public class Channel {
     private int reverb;
     private int num;
 
-    // getters
     public MidiChannel getChannel() { return channel; }
 
     public Channel(MidiChannel channel, int num) {
