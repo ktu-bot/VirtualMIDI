@@ -29,7 +29,7 @@ public class Play {
     }
 
     // EFFECTS: stops playback of the given instrument
-    public void stop(int instrument, int note){
+    public static void stop(int instrument, int note){
         Channel channelData = getChannelData(instrument);
         MidiChannel midiChannel = channelData.getChannel();
         midiChannel.noteOff(note, 0);

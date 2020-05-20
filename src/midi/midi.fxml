@@ -7,35 +7,35 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="753.0" prefWidth="1208.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="midi.Controller">
+<AnchorPane maxHeight="753.0" maxWidth="1208.0" minHeight="753.0" minWidth="1208.0" prefHeight="753.0" prefWidth="1208.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="midi.Controller">
    <children>
       <HBox layoutX="19.0" layoutY="377.0" prefHeight="373.0" prefWidth="1109.0">
          <children>
-            <Button minWidth="78.0" mnemonicParsing="false" prefHeight="498.0" prefWidth="78.0" text="C" />
-            <Button minWidth="78.0" mnemonicParsing="false" prefHeight="482.0" prefWidth="78.0" />
-            <Button minWidth="78.0" mnemonicParsing="false" prefHeight="511.0" prefWidth="78.0" />
-            <Button minWidth="78.0" mnemonicParsing="false" prefHeight="488.0" prefWidth="78.0" />
-            <Button minWidth="78.0" mnemonicParsing="false" prefHeight="476.0" prefWidth="78.0" />
-            <Button minWidth="78.0" mnemonicParsing="false" prefHeight="583.0" prefWidth="78.0" />
-            <Button minWidth="78.0" mnemonicParsing="false" prefHeight="494.0" prefWidth="78.0" />
-            <Button fx:id="c4" minWidth="78.0" mnemonicParsing="false" onAction="#play" prefHeight="611.0" prefWidth="78.0" text="C" />
-            <Button minWidth="78.0" mnemonicParsing="false" prefHeight="542.0" prefWidth="78.0" />
-            <Button minWidth="78.0" mnemonicParsing="false" prefHeight="607.0" prefWidth="78.0" />
-            <Button minWidth="78.0" mnemonicParsing="false" prefHeight="663.0" prefWidth="78.0" />
-            <Button minWidth="78.0" mnemonicParsing="false" prefHeight="691.0" prefWidth="78.0" />
-            <Button minWidth="78.0" mnemonicParsing="false" prefHeight="597.0" prefWidth="78.0" />
-            <Button minWidth="78.0" mnemonicParsing="false" prefHeight="688.0" prefWidth="78.0" />
-            <Button maxHeight="-Infinity" maxWidth="78.0" minHeight="-Infinity" minWidth="78.0" mnemonicParsing="false" prefHeight="373.0" prefWidth="78.0" text="C" />
+            <Button fx:id="48" minWidth="78.0" mnemonicParsing="false" onMousePressed="#play48" onMouseReleased="#stop48" prefHeight="498.0" prefWidth="78.0" text="C" />
+            <Button fx:id="50" minWidth="78.0" mnemonicParsing="false" onMousePressed="#play50" onMouseReleased="#stop50" prefHeight="482.0" prefWidth="78.0" />
+            <Button fx:id="52" minWidth="78.0" mnemonicParsing="false" onMousePressed="#play52" onMouseReleased="#stop52" prefHeight="511.0" prefWidth="78.0" />
+            <Button fx:id="53" minWidth="78.0" mnemonicParsing="false" onMousePressed="#play53" onMouseReleased="#stop53" prefHeight="488.0" prefWidth="78.0" />
+            <Button fx:id="55" minWidth="78.0" mnemonicParsing="false" onMousePressed="#play55" onMouseReleased="#stop55" prefHeight="476.0" prefWidth="78.0" />
+            <Button fx:id="57" minWidth="78.0" mnemonicParsing="false" onMousePressed="#play57" onMouseReleased="#stop57" prefHeight="583.0" prefWidth="78.0" />
+            <Button fx:id="59" minWidth="78.0" mnemonicParsing="false" onMousePressed="#play59" onMouseReleased="#stop59" prefHeight="494.0" prefWidth="78.0" />
+            <Button fx:id="60" minWidth="78.0" mnemonicParsing="false" onMousePressed="#play60" onMouseReleased="#stop60" prefHeight="611.0" prefWidth="78.0" text="C" />
+            <Button fx:id="62" minWidth="62" mnemonicParsing="false" onMousePressed="#play62" onMouseReleased="#stop62" prefHeight="542.0" prefWidth="78.0" />
+            <Button fx:id="64" minWidth="78.0" mnemonicParsing="false" onMousePressed="#play64" onMouseReleased="#stop64" prefHeight="607.0" prefWidth="78.0" />
+            <Button fx:id="65" minWidth="78.0" mnemonicParsing="false" onMousePressed="#play65" onMouseReleased="#stop65" prefHeight="663.0" prefWidth="78.0" />
+            <Button fx:id="67" minWidth="78.0" mnemonicParsing="false" onMousePressed="#play67" onMouseReleased="#stop67" prefHeight="691.0" prefWidth="78.0" />
+            <Button fx:id="69" minWidth="78.0" mnemonicParsing="false" onMousePressed="#play69" onMouseReleased="#stop69" prefHeight="597.0" prefWidth="78.0" />
+            <Button fx:id="71" minWidth="78.0" mnemonicParsing="false" onMousePressed="#play71" onMouseReleased="#stop71" prefHeight="688.0" prefWidth="78.0" />
+            <Button fx:id="72" minWidth="78.0" mnemonicParsing="false" onMousePressed="#play72" onMouseReleased="#stop72" prefHeight="611.0" prefWidth="78.0" text="C" />
          </children>
       </HBox>
-      <HBox alignment="BOTTOM_LEFT" layoutX="627.0" layoutY="275.0" prefHeight="344.0" prefWidth="448.0">
+      <HBox alignment="BOTTOM_LEFT" layoutX="615.0" layoutY="275.0" prefHeight="344.0" prefWidth="448.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
+            <Button fx:id="61" mnemonicParsing="false" onMousePressed="#play61" onMouseReleased="#stop61" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
                <HBox.margin>
                   <Insets right="20.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
+            <Button fx:id="63" mnemonicParsing="false" onMousePressed="#play63" onMouseReleased="#stop63" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
                <padding>
                   <Insets left="10.0" right="10.0" />
                </padding>
@@ -43,7 +43,7 @@
                   <Insets left="20.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
+            <Button fx:id="66" mnemonicParsing="false" onMousePressed="#play66" onMouseReleased="#stop66" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
                <padding>
                   <Insets left="10.0" right="10.0" />
                </padding>
@@ -51,7 +51,7 @@
                   <Insets left="120.0" right="20.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
+            <Button fx:id="68" mnemonicParsing="false" onMousePressed="#play68" onMouseReleased="#stop68" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
                <padding>
                   <Insets left="10.0" right="10.0" />
                </padding>
@@ -59,7 +59,7 @@
                   <Insets left="20.0" right="20.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
+            <Button fx:id="70" mnemonicParsing="false" onMousePressed="#play70" onMouseReleased="#stop70" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
                <padding>
                   <Insets left="10.0" right="10.0" />
                </padding>
@@ -71,12 +71,12 @@
       </HBox>
       <HBox alignment="BOTTOM_LEFT" layoutX="87.0" layoutY="275.0" prefHeight="344.0" prefWidth="448.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
+            <Button fx:id="49" mnemonicParsing="false" onMousePressed="#play49" onMouseReleased="#stop49" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
                <HBox.margin>
                   <Insets right="20.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
+            <Button fx:id="51" mnemonicParsing="false" onMousePressed="#play51" onMouseReleased="#stop51" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
                <padding>
                   <Insets left="10.0" right="10.0" />
                </padding>
@@ -84,7 +84,7 @@
                   <Insets left="20.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
+            <Button fx:id="54" mnemonicParsing="false" onMousePressed="#play54" onMouseReleased="#stop54" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
                <padding>
                   <Insets left="10.0" right="10.0" />
                </padding>
@@ -92,7 +92,7 @@
                   <Insets left="120.0" right="20.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
+            <Button fx:id="56" mnemonicParsing="false" onMousePressed="#play56" onMouseReleased="#stop56" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
                <padding>
                   <Insets left="10.0" right="10.0" />
                </padding>
@@ -100,7 +100,7 @@
                   <Insets left="20.0" right="20.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
+            <Button fx:id="58" mnemonicParsing="false" onMousePressed="#play58" onMouseReleased="#stop58" prefHeight="241.0" prefWidth="36.0" style="-fx-background-color: black;">
                <padding>
                   <Insets left="10.0" right="10.0" />
                </padding>
@@ -127,16 +127,57 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="105.0" prefWidth="106.0" text="2" GridPane.columnIndex="1">
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="105.0" prefWidth="106.0" text="5" GridPane.columnIndex="1">
                <GridPane.margin>
                   <Insets left="15.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="pad1" alignment="CENTER" mnemonicParsing="false" prefHeight="105.0" prefWidth="106.0" text="Pad 1" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Button fx:id="pad1" alignment="CENTER" mnemonicParsing="false" prefHeight="105.0" prefWidth="106.0" text="1" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets left="15.0" />
                </GridPane.margin>
             </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="105.0" prefWidth="106.0" text="6" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="105.0" prefWidth="106.0" text="2" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="105.0" prefWidth="106.0" text="7" GridPane.columnIndex="3">
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="105.0" prefWidth="106.0" text="3" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="105.0" prefWidth="106.0" text="8" GridPane.columnIndex="4">
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="105.0" prefWidth="106.0" text="4" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </Button>
+            <MenuButton mnemonicParsing="false" text="Instruments" GridPane.rowIndex="1">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <ScrollBar orientation="VERTICAL" GridPane.columnIndex="6">
+               <GridPane.margin>
+                  <Insets left="55.0" />
+               </GridPane.margin>
+            </ScrollBar>
          </children>
          <opaqueInsets>
             <Insets />
