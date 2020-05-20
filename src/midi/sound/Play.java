@@ -7,7 +7,7 @@ import java.util.Map;
 public class Play {
 
     private static Channel[] channels;
-    Instrument instruments[];
+    public static Instrument[] instruments;
     private Synthesizer synthesizer;
     static int velocity = 127;
 

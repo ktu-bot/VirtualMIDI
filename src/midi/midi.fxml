@@ -167,13 +167,9 @@
                   <Insets left="15.0" />
                </GridPane.margin>
             </Button>
-            <MenuButton mnemonicParsing="false" text="Instruments" GridPane.rowIndex="1">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-                <MenuItem mnemonicParsing="false" text="Action 2" />
-              </items>
+            <MenuButton fx:id="instruments" mnemonicParsing="false" text="Instruments" GridPane.rowIndex="1">
             </MenuButton>
-            <ScrollBar orientation="VERTICAL" GridPane.columnIndex="6">
+            <ScrollBar fx:id="volume" orientation="VERTICAL" GridPane.columnIndex="6">
                <GridPane.margin>
                   <Insets left="55.0" />
                </GridPane.margin>

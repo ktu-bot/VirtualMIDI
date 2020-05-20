@@ -3,27 +3,45 @@ package midi;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuButton;
 import jm.constants.ProgramChanges;
 import jm.music.data.Note;
 import midi.sound.Play;
 
+import javax.sound.midi.Instrument;
 import javax.sound.midi.MidiChannel;
 import java.awt.*;
 import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
 
-    int instrument = 0;
+    int instrument = 40;
     public Button a;
     int octave = 0;
+    Map<Instrument, Integer> insInt = new HashMap<>();
 
     @FXML
+    MenuButton instruments;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Play play = new Play();
         play.setup();
+        Instrument[] instruments1 = Play.instruments;
+        for (int i = 0,j = 0; i < Play.instruments.length; i++, j++) {
+            insInt.put(instruments1[i],j);
+            javafx.scene.control.MenuItem m = new javafx.scene.control.MenuItem(instruments1[i].toString());
+            int finalI = i;
+            m.setOnAction(e-> setInstrument(getinsInt(instruments1[finalI])));
+            instruments.getItems().add(m);
+        }
+    }
+
+    private int getinsInt(Instrument i) {
+        return insInt.get(i);
     }
 
     public void setInstrument(int i) {
@@ -104,10 +122,5 @@ public class Controller implements Initializable {
 
     public void play72() { Play.play(instrument, 72);}
     public void stop72() { Play.stop(instrument, 72);}
-
-
-
-
-
 }
 
